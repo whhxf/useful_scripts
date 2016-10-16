@@ -1,0 +1,29 @@
+//用于客户账号后台
+var tr = $('tr td').toArray();
+var str = '';
+for(var i = 0; i < tr.length; i++){
+  if( i % 7 == 0){
+    str += tr[i].innerText;
+    
+  }else if( i % 7 == 1){
+    str += ' ';
+    str += tr[i].innerText;
+    str += '\n';
+  }
+}
+console.log(str)
+
+//用户管理员后台，没有省略号
+var tr = $('tr td').toArray();
+var str = '';
+for(var i = 0; i < tr.length; i++){
+  if( i % 10 == 0){
+    str += tr[i].innerText;
+    
+  }else if( i % 10 == 1){
+    str += ' ';
+    str += tr[i].innerText;
+    str += '\n';
+  }
+}
+console.log(str)	
